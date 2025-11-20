@@ -1,0 +1,122 @@
+.App {
+  text-align: center;
+}
+body{
+  background-color: #0028ad;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  gap: 0;
+  position: fixed;        /* si quieres que esté siempre abajo */
+  bottom: 0;
+  left: 0;
+  background: #fff;       /* cámbialo si necesitas */
+  padding: 10px 0;
+  border-top: 1px solid #eee;
+}
+
+/* contenedor fijo en la parte inferior que ocupa todo el ancho */
+.marquee-wrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-top: 1px solid rgba(0,0,0,0.06);
+  z-index: 9999; /* por encima del resto si quieres */
+  padding: 6px 0;
+}
+
+/* pista que contiene las imágenes (la hemos duplicado en React) */
+.marquee-track {
+  display: flex;
+  flex-wrap: nowrap;        /* evita que las imágenes salten a otra línea */
+  align-items: center;
+  gap: 24px;
+  /* ancho dinámico (max-content) para que todo el contenido quede en una sola fila */
+  width: max-content;
+  /* animación: mover la pista hacia la izquierda un 50% (una "mitad" — la colección original) */
+  animation-name: marquee-scroll;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  /* la duración se pasa inline desde React para poder ajustar */
+}
+
+/* cada item no se encoge ni estira */
+.marquee-item {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* imagen: tamaño fijo por altura, mantiene proporción */
+.marquee-item img {
+  height: 56px; /* ajusta según prefieras */
+  width: auto;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* animación: desplazamos exactamente la mitad (50%) */
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+#calendarTable{
+  width: "50%";    
+  float: "left";    
+  padding: "1rem";
+  box-sizing: "border-box";
+  height: "100vh";   
+  overflow-y: "auto";
+}
+
