@@ -1,18 +1,25 @@
 import Sponsors from "./Components/Sponsors";
-// en App.jsx o en index.js según tu proyecto
+import Eventos from "./Components/Eventos";
 import "./App.css";
-import Eventos from "./Components/Eventos"
-
 
 function App() {
   return (
-<div className="calendarTable">
-    <div>
-      <Eventos/>
-    </div>
-    <div>
-      <Sponsors />
-    </div>
+    <div className="app-container">
+      {/* Área principal: dos columnas (izquierda = tabla, derecha = contenido) */}
+      <div className="content">
+        <div className="left-column">
+          <Eventos />
+        </div>
+
+        <div className="right-column">
+          {/* Aquí pondrás lo que quieras más adelante */}
+        </div>
+      </div>
+
+      {/* Tira de sponsors en la parte inferior, siempre visible */}
+      <div className="sponsors-strip">
+        <Sponsors />
+      </div>
     </div>
   );
 }
