@@ -143,24 +143,7 @@ body{
   overflow: hidden; /* evita solapamientos */
 }
 
-/* COLUMNA IZQUIERDA - tabla */
-.left-column {
-  width: 50%;             /* mitad izquierda */
-  padding: 20px;
-  box-sizing: border-box;
-  border-right: 1px solid #e6e6e6;
-  overflow-y: auto;       /* scroll si hay muchos eventos */
-  background: #fff;
-}
 
-/* COLUMNA DERECHA - contenido futuro */
-.right-column {
-  width: 50%;             /* mitad derecha */
-  padding: 20px;
-  box-sizing: border-box;
-  overflow-y: auto;
-  background: #fafafa;
-}
 
 /* TIRA DE SPONSORS (fija en la parte inferior dentro del layout) */
 .sponsors-strip {
@@ -184,26 +167,7 @@ body{
   height: auto;
 }
 
-/* Tabla (opcional: estilos por defecto) */
-.left-column table {
-  width: 100%;
-  border-collapse: collapse;
-}
 
-.left-column th,
-.left-column td {
-  padding: 8px 10px;
-  border-bottom: 1px solid #eee;
-  text-align: left;
-}
-
-/* Cabecera sticky (si quieres que se quede arriba) */
-.left-column thead th {
-  position: sticky;
-  top: 0;
-  background: #fff;
-  z-index: 2;
-}
 
 /* Responsive: en pantallas pequeñas apilar columnas */
 @media (max-width: 768px) {
@@ -298,6 +262,31 @@ body{
   color: #0028ad;
 }
 
-  
-  
+  /* Layout general */
+.layout {
+  display: flex;             /* pone las columnas en fila */
+  gap: 16px;                 /* espacio entre columnas */
+  padding: 16px;
+}
 
+/* Columna izquierda (Eventos) */
+.left-column {
+  flex: 1;                   /* ocupa la mitad izquierda */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Columna derecha (Partidos) */
+.right-column {
+  flex: 1;                   /* ocupa la mitad derecha */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Sponsors al final, ancho completo */
+.Sponsors {
+  width: 100%;
+  margin-top: 16px;
+}
