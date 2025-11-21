@@ -221,6 +221,7 @@ body{
   .left-column {
     border-right: none;
     border-bottom: 1px solid #eee;
+    background-color: none;
   }
 }
 
@@ -229,4 +230,74 @@ body{
    y ajusta .content { height: calc(100vh - var(--sponsors-height)); } 
    (la configuración actual ya aplica la resta de altura, así no hace falta fixed) */
 
+   .eventos-box {
+    background: #bddeff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+    margin: 3px;
+  }
+  
+  .eventos-box h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .eventos-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .eventos-table th {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background: #f3f4f6;
+    font-weight: 600;
+  }
+  
+  .eventos-table td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .header-bar {
+  width: 100%;
+  height: 80px;
+  background: white;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.club-logo {
+  height: 70px;
+}
+
+.header-left h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0028ad;
+}
+
+.header-right {
+  font-size: 16px;
+  opacity: 0.9;
+  color: #0028ad;
+}
+
+  
+  
 
