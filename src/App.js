@@ -12,10 +12,11 @@ function App() {
       <div className="layout">
         <div className="left-column">
           <Eventos />
+          <Partidos/>
         </div>
 
         <div className="right-column">
-          <Partidos/>
+
         </div>
       </div>
 

@@ -10,7 +10,7 @@ function importAll(r) {
 }
 const images = importAll(require.context("../assets/sponsors", false, /\.(png|jpe?g|svg)$/));
 
-export default function Sponsors({ duration = 20, height = 70 }) {
+export default function Sponsors({ duration = 20, height = 50 }) {
   // duplicamos la lista para crear la pista "doble"
   const doubled = [...images, ...images,...images];
 
