@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/cbu-dashboard/static/css/main.06cc1715.css",
+    "main.js": "/cbu-dashboard/static/js/main.42d6ab97.js",
+    "static/js/453.fe348c98.chunk.js": "/cbu-dashboard/static/js/453.fe348c98.chunk.js",
+    "static/media/escudo.jpeg": "/cbu-dashboard/static/media/escudo.abb0d2bd36e68c58a2dd.jpeg",
+    "static/media/Logotipo Glow Up Utrera.png": "/cbu-dashboard/static/media/Logotipo Glow Up Utrera.3f5831f9258a2b805eb3.png",
+    "static/media/Caja Rural Utrera Banner.jpeg": "/cbu-dashboard/static/media/Caja Rural Utrera Banner.06747ca6683e23efde89.jpeg",
+    "static/media/Alba IBS.png": "/cbu-dashboard/static/media/Alba IBS.2fd751af0dbb67221347.png",
+    "static/media/Logo AYUtrera.jpg": "/cbu-dashboard/static/media/Logo AYUtrera.5b73bd6d3ef5a42ad108.jpg",
+    "static/media/Logo Mayma.png": "/cbu-dashboard/static/media/Logo Mayma.8e181048a64ee89b7c58.png",
+    "static/media/Club Baloncesto Utrera.jpeg": "/cbu-dashboard/static/media/Club Baloncesto Utrera.73a96c9366e5fd3aa421.jpeg",
+    "index.html": "/cbu-dashboard/index.html",
+    "main.06cc1715.css.map": "/cbu-dashboard/static/css/main.06cc1715.css.map",
+    "main.42d6ab97.js.map": "/cbu-dashboard/static/js/main.42d6ab97.js.map",
+    "453.fe348c98.chunk.js.map": "/cbu-dashboard/static/js/453.fe348c98.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.06cc1715.css",
+    "static/js/main.42d6ab97.js"
+  ]
+}
